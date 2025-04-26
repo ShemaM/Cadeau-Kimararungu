@@ -3,115 +3,655 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Cadeau Kimararungu | Research Consultant</title>
+    <title>Cadeau Héritier - Forced Migration Research & Policy</title>
     
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Professional Research Color System */
+            --primary: #032761;
+            --primary-dark: #021a40;
+            --primary-light: #bfdbfe;
+            --secondary: #ab9571;
+            --text: #2d3748;
+            --text-light: #4a5568;
+            --text-lighter: #718096;
+            --background: #f8f9fa;
+            --background-alt: #ffffff;
+            --border: #e2e8f0;
+            --highlight: #e6fffa;
+        }
+
+        body {
+            font-family: 'Crimson Text', serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.7;
+            font-size: 1.25rem;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--primary);
+            margin-bottom: 1.8rem;
+        }
+
+        h1 { 
+            font-size: 3.5rem;
+            font-weight: 800;
+            letter-spacing: -0.5px;
+            margin-bottom: 2rem;
+        }
+        
+        h2 { 
+            font-size: 2.8rem;
+            margin-top: 3.5rem;
+        }
+        
+        h3 { 
+            font-size: 2.2rem;
+            margin-top: 3rem;
+        }
+        
+        h4 { 
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+        
+        h5 {
+            font-size: 1.4rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--secondary);
+        }
+
+        p {
+            color: var(--text-light);
+            margin-bottom: 2rem;
+            max-width: 65ch;
+            font-size: 1.3rem;
+            line-height: 1.9;
+        }
+
+        .lead {
+            font-size: 1.5rem;
+            color: var(--text);
+            font-weight: 400;
+            line-height: 1.9;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-15px) translateX(10px); }
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+        }
+        
+        .slide-up {
+            transform: translateY(30px);
+        }
+        
+        .slide-up.visible {
+            transform: translateY(0);
+        }
+        
+        .slide-right {
+            transform: translateX(-30px);
+        }
+        
+        .slide-right.visible {
+            transform: translateX(0);
+        }
+        
+        .slide-left {
+            transform: translateX(30px);
+        }
+        
+        .slide-left.visible {
+            transform: translateX(0);
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 6rem 0;
+            opacity: 0;
+            transition: opacity 0.8s ease;
+        }
+        
+        .section.visible {
+            opacity: 1;
+        }
+
+        .section--alt {
+            background: var(--background-alt);
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        /* Header/Navigation */
+        .navbar {
+            padding: 1.5rem 0;
+            transition: all 0.3s ease;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .navbar.scrolled {
+            background-color: var(--background-alt) !important;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+            padding: 1rem 0;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary) !important;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-link {
+            font-weight: 500;
+            color: var(--text) !important;
+            position: relative;
+            padding: 0.5rem 1rem !important;
+            margin: 0 0.5rem;
+            font-size: 1rem;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 1rem;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: calc(100% - 2rem);
+        }
+
+        /* Buttons */
+        .btn {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            padding: 0.8rem 2rem;
+            border-radius: 0.25rem;
+            transition: all 0.3s ease;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-primary {
+            background: var(--primary);
+            border-color: var(--primary);
+            box-shadow: 0 2px 10px rgba(3, 39, 97, 0.2);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            border-color: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(3, 39, 97, 0.3);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 9rem 0 7rem;
+            position: relative;
+            background: linear-gradient(135deg, var(--background-alt) 0%, #f0f4f8 100%);
+        }
+
+        .hero-title {
+            font-size: 4.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .hero-subtitle {
+            font-family: 'Crimson Text', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            color: var(--text-light);
+            margin-bottom: 3rem;
+            line-height: 1.6;
+        }
+
+        /* Image Section */
+        .profile-image-container {
+            position: relative;
+            max-width: 550px;
+            margin: 0 auto;
+        }
+
+        .profile-image {
+            border: 12px solid white;
+            border-radius: 0.5rem;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transform: perspective(1000px) rotateY(5deg);
+            transition: transform 0.5s ease;
+        }
+
+        .profile-image:hover {
+            transform: perspective(1000px) rotateY(0deg);
+        }
+
+        .image-decoration {
+            position: absolute;
+            z-index: -1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .decoration-1 {
+            top: -30px;
+            left: -30px;
+            width: 120px;
+            height: 120px;
+            background-color: rgba(179, 212, 252, 0.6);
+            border-radius: 50%;
+        }
+
+        .decoration-2 {
+            bottom: -20px;
+            right: -20px;
+            width: 80px;
+            height: 80px;
+            background-color: rgba(147, 197, 253, 0.4);
+            border-radius: 50%;
+            animation-delay: 1s;
+        }
+
+        /* Timeline */
+        .timeline-item {
+            position: relative;
+            padding-left: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 2.5rem;
+            height: 2.5rem;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 0.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Research Cards */
+        .research-card {
+            border: none;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            height: 100%;
+        }
+
+        .research-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .research-card-img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .research-badge {
+            display: inline-block;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            padding: 0.25rem 0.75rem;
+            font-size: 0.875rem;
+            border-radius: 0.25rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Contact Section */
+        .contact-section {
+            background: var(--primary-dark);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd' opacity='0.05'%3E%3Cg fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+
+        .contact-heading {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-email {
+            font-size: 2rem;
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .contact-email:hover {
+            color: var(--primary-light);
+            text-decoration: none;
+        }
+
+        .social-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            margin-right: 1rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 1200px) {
+            .hero-title {
+                font-size: 4rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            h1 { font-size: 3.2rem; }
+            h2 { font-size: 2.5rem; }
+            
+            .hero {
+                padding: 6rem 0 4rem;
+            }
+            
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.6rem;
+            }
+            
+            body {
+                font-size: 1.2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 2.8rem; }
+            h2 { font-size: 2.2rem; }
+            h3 { font-size: 1.9rem; }
+            
+            .hero {
+                text-align: center;
+                padding: 5rem 0 3rem;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .hero-subtitle {
+                font-size: 1.4rem;
+            }
+            
+            body {
+                font-size: 1.15rem;
+            }
+            
+            .lead {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 576px) {
+            h1 { font-size: 2.5rem; }
+            h2 { font-size: 2rem; }
+            h3 { font-size: 1.7rem; }
+            
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .lead {
+                font-size: 1.2rem;
+            }
+            
+            body {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 </head>
-<body>
-    <!-- Header -->
-    <header class="header">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <div class="header__inner">
-                <a href="#" class="logo">Cadeau Kimararungu</a>
-                <button class="nav-toggle" id="navToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <nav class="nav-menu" id="navMenu">
-                    <a href="#about">About</a>
-                    <a href="#research">Research</a>
-                    <a href="#expertise">Expertise</a>
-                    <a href="#publications">Publications</a>
-                    <a href="#contact">Contact</a>
-                </nav>
+            <a class="navbar-brand" href="#">CadeauHéritier</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#research">Research</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="container">
-        <div class="hero__grid">
-            <div class="hero__content">
-                <h1 class="hero__title animate fade-in">Cadeau Kimararungu</h1>
-                <p class="hero__subtitle animate fade-in" style="animation-delay: 0.2s">PhD Research Consultant specializing in data analysis, academic writing, and research methodology</p>
-                <a href="#contact" class="hero__cta animate fade-in" style="animation-delay: 0.4s">Get in Touch</a>
-                
-                <!-- SVG Academic Icons -->
-                <div class="hero__icons">
-                    <svg class="hero__icon animate float" style="animation-delay: 0.6s" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L1 7L12 12L23 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 12L12 17L23 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 17L12 22L23 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-                    <svg class="hero__icon animate float" style="animation-delay: 0.8s" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L1 7L12 12L23 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 12L12 17L23 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 17L12 22L23 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    
-                    <svg class="hero__icon animate float" style="animation-delay: 1s" width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12 2L1 7L12 12L23 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 12L12 17L23 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M1 17L12 22L23 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
+    <section id="home" class="hero section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0 fade-in slide-right">
+                    <h5 class="text-uppercase mb-3" style="letter-spacing: 3px; color: var(--secondary);">Researcher & Advocate</h5>
+                    <h1 class="hero-title">Cadeau Héritier</h1>
+                    <h2 class="hero-subtitle">Forced Migration & Refugee Policy Specialist</h2>
+                    <p class="lead">Multilingual data analyst and refugees' rights advocate with extensive experience in forced migration research and policy development across East Africa.</p>
+                    <div class="d-flex flex-wrap gap-3">
+                        <a href="#about" class="btn btn-primary px-4 py-3 animate__animated animate__pulse animate__infinite animate__slower">
+                            Explore My Work <i class="fas fa-arrow-down ms-2"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline-dark px-4 py-3">
+                            Contact Me <i class="fas fa-envelope ms-2"></i>
+                        </a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="hero__image-container animate fade-in" style="animation-delay: 0.5s">
-                <div class="hero__image-wrapper">
-                    <img src="Cadeau.png" alt="Dr. Cadeau Kimararungu" class="hero__image">
-                    
+                
+                <div class="col-lg-6 fade-in slide-left">
+                    <div class="profile-image-container">
+                        <img src="images/Cadeau.png" alt="Cadeau Héritier" class="img-fluid profile-image animate__animated animate__fadeIn">
+                        <div class="image-decoration decoration-1"></div>
+                        <div class="image-decoration decoration-2"></div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-</section>
+    </section>
 
     <!-- About Section -->
-    <section class="section" id="about">
+    <section id="about" class="section section--alt">
         <div class="container">
-            <h2>About Me</h2>
-            <div class="about__content">
-                <div>
-                    <h3>Research consultant focused on data-driven solutions.</h3>
-                    <p>Currently providing research consulting services to academic institutions and organizations, helping them transform data into meaningful insights.</p>
+            <div class="row mb-5 fade-in">
+                <div class="col-12 text-center">
+                    <h2>About Me</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">Specializing in refugee protection, peacebuilding, and community engagement with host communities in the Great Lakes Region.</p>
                 </div>
-                <div class="about__skills">
-                    <div class="skill-item">
-                        <div class="skill-item__label">
-                            <span>Research Design</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-bar__fill" style="width: 95%"></div>
-                        </div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-item__label">
-                            <span>Data Analysis</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-bar__fill" style="width: 98%"></div>
+            </div>
+            <div class="row fade-in">
+                <div class="col-lg-5 mb-5 mb-lg-0 slide-up">
+                    <h4 class="mb-4">Key Expertise</h4>
+                    <div class="mb-4">
+                        <h5>Forced Migration Research</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-item__label">
-                            <span>Academic Writing</span>
-                        </div>
-                        <div class="progress-bar">
-                            <div class="progress-bar__fill" style="width: 90%"></div>
+                    <div class="mb-4">
+                        <h5>Refugee Protection Policy</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
-                    <div class="skill-item">
-                        <div class="skill-item__label">
-                            <span>Methodology</span>
+                    <div class="mb-4">
+                        <h5>Community Engagement</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
-                        <div class="progress-bar">
-                            <div class="progress-bar__fill" style="width: 92%"></div>
+                    </div>
+                </div>
+                <div class="col-lg-7 slide-up">
+                    <p>Deeply involved in forced migration research with institutions like University of Oxford's Refugee Studies Center, British Academy, and University of Bergen.</p>
+                    <p>Currently serving as Policy & Research Advisor at Global Rights Defenders (GRD), leading studies on durable solutions for refugees.</p>
+                    <p>Extensive experience working with NGOs like HIAS, RCK, and RefugePoint on refugee protection and conflict resolution.</p>
+                    
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4 class="mb-3">Personal Details</h4>
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><strong>Based in:</strong> Nairobi, Kenya</li>
+                                <li class="mb-2"><strong>Languages:</strong> English, French, Kiswahili, Kinyarwanda</li>
+                                <li class="mb-2"><strong>Education:</strong> BA Sociology (Moi University)</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="p-4 bg-white rounded shadow-sm">
+                                <h5 class="mb-3">Research Interests</h5>
+                                <ul class="list-unstyled">
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Forced Migration</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Refugee Economies</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Peacebuilding</li>
+                                    <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Digital Livelihoods</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="row mb-5 fade-in">
+                <div class="col-12 text-center">
+                    <h2>Professional Experience</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">My journey working with refugees and leading research in forced migration.</p>
+                </div>
+            </div>
+            
+            <div class="row fade-in">
+                <div class="col-12">
+                    <div class="timeline">
+                        <!-- Global Rights Defenders -->
+                        <div class="timeline-item slide-up">
+                            <div class="timeline-dot">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Global Rights Defenders (GRD)</h4>
+                                <p class="text-primary mb-3">Policy & Research Advisor | July 2024 - Present</p>
+                                <ul>
+                                    <li>Leading research on 'An Alternative to Durable Solutions for Refugees: East African Community Permit'</li>
+                                    <li>Comparative analysis of Global Compact on Refugee (GCR) member countries' refugee laws and policies</li>
+                                    <li>Study on 'Understanding Challenges with Refugee ID in Kakuma Camp'</li>
+                                    <li>Presented research at 'From Evidence to Policy: Research & Policy Symposium (2024)'</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Samuel Hall -->
+                        <div class="timeline-item slide-up">
+                            <div class="timeline-dot">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="timeline-content">
+                                <h4>Samuel Hall</h4>
+                                <p class="text-primary mb-3">Research Assistant Intern | Jan 2024 - July 2024</p>
+                                <ul>
+                                    <li>Red Cross Global Evaluation: Protection program in 5 African countries</li>
+                                    <li>FAIR Project: Research on inclusive return policies</li>
+                                    <li>UNDP study on 'The Nexus between Climate, Mobility and Gender in Kenya'</li>
+                                    <li>Co-authored refugee storytelling publications</li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -120,86 +660,58 @@
     </section>
 
     <!-- Research Section -->
-    <section class="section section--alt" id="research">
+    <section id="research" class="section section--alt">
         <div class="container">
-            <h2>Research Projects</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <img src="https://via.placeholder.com/600x400" alt="Education Access" class="research-card__image">
-                    <div class="research-card__content">
-                        <h3 class="research-card__title">Education Access in Kenya</h3>
-                        <span class="research-card__category">Policy Research</span>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <img src="https://via.placeholder.com/600x400" alt="Public Health" class="research-card__image">
-                    <div class="research-card__content">
-                        <h3 class="research-card__title">Public Health Interventions</h3>
-                        <span class="research-card__category">Epidemiology</span>
-                    </div>
-                </div>
-                <div class="research-card">
-                    <img src="https://via.placeholder.com/600x400" alt="Economic Growth" class="research-card__image">
-                    <div class="research-card__content">
-                        <h3 class="research-card__title">Economic Growth Patterns</h3>
-                        <span class="research-card__category">Development</span>
-                    </div>
+            <div class="row mb-5 fade-in">
+                <div class="col-12 text-center">
+                    <h2>Selected Research</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">My contributions to forced migration research and policy development.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Expertise Section -->
-    <section class="section" id="expertise">
-        <div class="container">
-            <h2>Research Expertise</h2>
-            <div class="research-grid">
-                <div class="research-card">
-                    <div class="research-card__content">
-                        <h3 class="research-card__title">Quantitative Methods</h3>
-                        <p>Advanced statistical analysis using SPSS, Stata, R, and Python for robust research findings.</p>
+            
+            <div class="row fade-in">
+                <!-- Research Item 1 -->
+                <div class="col-md-6 col-lg-4 mb-4 slide-up">
+                    <div class="research-card card h-100 animate__animated animate__fadeInUp">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="research-card-img card-img-top" alt="Research Image">
+                        <div class="card-body">
+                            <span class="research-badge">Oxford University</span>
+                            <h5 class="card-title">Reimagining Diaspora Humanitarianism</h5>
+                            <p class="card-text">Co-authored with Dr. Marie Godin (Oxford). Presented at ASAUK Conference 2024 and IASFM20.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-sm btn-outline-primary">Read More</button>
+                        </div>
                     </div>
                 </div>
-                <div class="research-card">
-                    <div class="research-card__content">
-                        <h3 class="research-card__title">Qualitative Research</h3>
-                        <p>In-depth interviews, focus groups, and thematic analysis using NVivo for rich qualitative data.</p>
+                
+                <!-- Research Item 2 -->
+                <div class="col-md-6 col-lg-4 mb-4 slide-up">
+                    <div class="research-card card h-100 animate__animated animate__fadeInUp animate__delay-1s">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="research-card-img card-img-top" alt="Research Image">
+                        <div class="card-body">
+                            <span class="research-badge">Refugee Studies Center</span>
+                            <h5 class="card-title">Digital Refugee Economies in Nairobi</h5>
+                            <p class="card-text">Research with Oxford's Refugee Studies Center on Congolese refugee digital livelihoods.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-sm btn-outline-primary">Read More</button>
+                        </div>
                     </div>
                 </div>
-                <div class="research-card">
-                    <div class="research-card__content">
-                        <h3 class="research-card__title">Mixed Methods</h3>
-                        <p>Combining quantitative and qualitative approaches for comprehensive research solutions.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Publications Section -->
-    <section class="section section--alt" id="publications">
-        <div class="container">
-            <h2>Selected Publications</h2>
-            <div class="publication-list">
-                <div class="publication-item">
-                    <div class="publication-item__year">2023</div>
-                    <div>
-                        <div class="publication-item__title">"Educational Inequality in Rwanda"</div>
-                        <div class="publication-item__journal">Journal of African Development</div>
-                    </div>
-                </div>
-                <div class="publication-item">
-                    <div class="publication-item__year">2022</div>
-                    <div>
-                        <div class="publication-item__title">"Public Health Interventions in East Africa"</div>
-                        <div class="publication-item__journal">Health Policy Review</div>
-                    </div>
-                </div>
-                <div class="publication-item">
-                    <div class="publication-item__year">2021</div>
-                    <div>
-                        <div class="publication-item__title">"Gender and Economic Participation"</div>
-                        <div class="publication-item__journal">African Social Science Journal</div>
+                
+                <!-- Research Item 3 -->
+                <div class="col-md-6 col-lg-4 mb-4 slide-up">
+                    <div class="research-card card h-100 animate__animated animate__fadeInUp animate__delay-2s">
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="research-card-img card-img-top" alt="Research Image">
+                        <div class="card-body">
+                            <span class="research-badge">Samuel Hall</span>
+                            <h5 class="card-title">Refugee Storytelling Series</h5>
+                            <p class="card-text">"On the Long Run" and "With One Arm and Endless Resolve" - refugee narratives with Samuel Hall.</p>
+                        </div>
+                        <div class="card-footer bg-transparent border-top-0">
+                            <button class="btn btn-sm btn-outline-primary">Read More</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -207,29 +719,116 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="footer" id="contact">
+    <section id="contact" class="section contact-section text-white">
         <div class="container">
-            <h2 class="text-center">Let's Collaborate</h2>
-            <div class="footer__content">
-                <div class="footer__contact">
-                    <h3>Contact Information</h3>
-                    <a href="mailto:cadeaukim@gmail.com">cadeaukim@gmail.com</a>
-                    <a href="tel:+250123456789">+254 7200 456 789</a>
-                    <p>Nairobi, Kenya</p>
+            <div class="row align-items-center fade-in">
+                <div class="col-lg-8 mb-5 mb-lg-0">
+                    <h2 class="contact-heading mb-4">Let's collaborate on research.</h2>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-envelope fa-2x me-4"></i>
+                        <a href="mailto:Cadeauheritier01@gmail.com" class="contact-email">Cadeauheritier01@gmail.com</a>
+                    </div>
+                    <p class="mb-4">Specializing in forced migration research, refugee protection policy, and community engagement in East Africa and the Great Lakes Region.</p>
+                    
+                    <div class="d-flex">
+                        <a href="#" class="social-icon me-3" target="_blank">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-icon me-3" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-icon" target="_blank">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <h3>Connect With Me</h3>
-                    <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
-                        <a href="#" aria-label="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-                        <a href="#" aria-label="ORCID"><i class="fab fa-orcid"></i></a>
+                <div class="col-lg-4">
+                    <div class="bg-white p-4 rounded shadow-sm text-dark animate__animated animate__fadeInRight">
+                        <h4 class="mb-4">Get In Touch</h4>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-  <script src="index.js"></script>
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2024 Cadeau Héritier. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Scroll animations
+        document.addEventListener('DOMContentLoaded', function() {
+            // Navbar scroll effect
+            window.addEventListener('scroll', function() {
+                const navbar = document.querySelector('.navbar');
+                if (window.scrollY > 50) {
+                    navbar.classList.add('scrolled');
+                } else {
+                    navbar.classList.remove('scrolled');
+                }
+            });
+            
+            // Intersection Observer for scroll animations
+            const fadeElements = document.querySelectorAll('.fade-in, .slide-up, .slide-right, .slide-left, .section');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            fadeElements.forEach(element => {
+                observer.observe(element);
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetElement = document.querySelector(targetId);
+                    
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
