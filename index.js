@@ -191,3 +191,41 @@
             });
         });
     
+        // Map Initialization
+        // This code initializes a Leaflet map centered around the Great Lakes region of Africa.
+        document.addEventListener("DOMContentLoaded", function() {
+            var map = L.map('africa-map').setView([-1.9403, 29.8739], 5); // Center map around Rwanda
+        
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+        
+            var greatLakesCountries = [
+                { name: "Rwanda", latlng: [-1.9403, 29.8739] },
+                { name: "Burundi", latlng: [-3.3731, 29.9189] },
+                { name: "Uganda", latlng: [1.3733, 32.2903] },
+                { name: "Kenya", latlng: [0.0236, 37.9062] },
+                { name: "Tanzania", latlng: [-6.3690, 34.8888] },
+                { name: "DR Congo", latlng: [-4.0383, 21.7587] }
+            ];
+        
+            greatLakesCountries.forEach(function(country) {
+                L.marker(country.latlng)
+                 .addTo(map)
+                 .bindPopup(country.name);
+            });
+        });
+
+        // Initialize AOS again for any new elements added dynamically
+         // This is useful if you are adding new elements to the DOM after the initial page load.
+        AOS.init({
+            duration: 1000, // Animation duration in ms
+            easing: 'ease-in-out', // Easing function
+            once: true, // Trigger animation only once
+          });
+          
+          AOS.init({
+            duration: 1000,
+            easing: 'ease-out-back',
+            once: true,
+          });
