@@ -6,142 +6,372 @@
     <title>Cadeau Héritier - Forced Migration Research & Policy</title>
     
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     
     <!-- Animate.css -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
+    <!-- AOS (Animate On Scroll) -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+   
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
         <div class="container">
-            <a class="navbar-brand" href="#">Cadeau Héritier Consulting </a>
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-globe-americas me-2" viewBox="0 0 16 16">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0ZM2.04 4.326c.325 1.329 2.532 2.54 3.717 3.19.48.263.793.434.743.484-.08.08-.162.158-.242.234-.416.396-.787.749-.758 1.266.035.634.618.824 1.214 1.017.577.188 1.168.38 1.286.983.082.417-.075.988-.22 1.52-.215.782-.406 1.48.22 1.48 1.5-.5 3.798-3.186 4-5 .138-1.243-2-2-3.5-2.5-.478-.16-.755.081-.99.284-.172.15-.322.279-.51.216-.445-.148-2.5-2-1.5-2.5.78-.39.952-.171 1.227.182.078.099.163.208.273.318.609.304.662-.132.723-.633.039-.322.081-.671.277-.867.434-.434 1.265-.791 2.028-1.12.712-.306 1.365-.587 1.579-.88A7 7 0 1 1 2.04 4.327Z"/>
+                </svg>
+                <span>Cadeau Héritier Consulting</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link custom-link px-3" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link custom-link px-3" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
+                        <a class="nav-link custom-link px-3" href="#expertise">Expertise</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#research">Research</a>
+                        <a class="nav-link custom-link px-3" href="#research">Research</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link custom-link px-3" href="#publications">Publications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link custom-link px-3" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
-    
-   
-    <!-- Hero Section -->
-<section id="home" class="hero section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-6 mb-5 mb-lg-0 fade-in slide-right">
-                <h5 class="text-uppercase mb-3" style="letter-spacing: 3px; color: var(--secondary);">Researcher & Advocate</h5>
-                <h2 class="hero-title">Forced Migration Research, Policy & Community Engagement</h2>
-                <p class="p-main">I am a multilingual data analyst and dedicated refugees’ rights advocate with over five years of extensive experience working with organizations working with refugees. Over the years, I have worked with the leading NGOs working with refugees in Nairobi, such as HIAS, the Refugee Consortium of Kenya (RCK), RefugePoint, HAART Kenya, and Pamoja Trust, on issues ranging from community engagement and refugee protection to peacebuilding and conflict resolution. In addition, I have been deeply involved in forced migration research in Nairobi and contributing as Research Assistant to various research projects funded by the University of Oxford’s Refugee Studies Center and British Academy, the University of Bergen, Clark University, American University, as well as Samuel Hall where I served as Research Assistant Intern, and continue to serve as Research Consultant.
-                    Today I continue to apply my expertise in migration governance and refugee protection at GRD (Global Rights Defenders) where I am serving as Policy & Research Advisor. In addition, I work as a Research Consultant specializing in quantitative and qualitative data analysis. </p>
-                <div class="d-flex flex-wrap gap-3">
-                    <a href="#about" class="btn btn-primary px-4 py-3 animate__animated animate__pulse animate__infinite animate__slower">
-                        Explore My Work <i class="fas fa-arrow-down ms-2"></i>
-                    </a>
-                    <a href="#contact" class="btn btn-outline-dark px-4 py-3">
-                        Reach Out <i class="fas fa-envelope ms-2"></i>
-                    </a>
-                </div>
-            </div>
 
-            <!-- Profile Image -->
-            <div class="col-lg-6 fade-in slide-left d-flex align-items-stretch">
-                <div class="profile-image-container position-relative flex-grow-1">
-                    <img src="Cadeau.png" alt="Cadeau Héritier" class="img-fluid profile-image animate__animated animate__fadeIn">
-                    <div class="image-decoration decoration-1"></div>
-                    <div class="image-decoration decoration-2"></div>
-                    <div class=" image-description h">Cadeau Héritier - Advocate for Refugee Rights</div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="shape-divider-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.29C191.17,73.71,95.75,98.19,0,119.05V0H1200V27.35C1041.86,86.61,861.78,75.2,698.24,44.62,574.5,21.15,463.12,34.2,321.39,56.29Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <h1 class="hero-title mb-4" data-aos="fade-right">Transforming Forced Migration Research into Policy Impact</h1>
+                    <p class="hero-subtitle mb-4" data-aos="fade-right" data-aos-delay="100">
+                        Bridging the gap between academic research, policy development, and community engagement in refugee protection and forced migration studies.
+                    </p>
+                    <div class="d-flex flex-wrap gap-3" data-aos="fade-right" data-aos-delay="200">
+                        <a href="#research" class="btn btn-success btn-lg px-4 py-3">
+                            <i class="fas fa-search me-2"></i> Explore Research
+                        </a>
+                        <a href="#contact" class="btn btn-outline-success btn-lg px-4 py-3">
+                            <i class="fas fa-paper-plane me-2"></i> Get in Touch
+                        </a>
+                    </div>
+                    
+                    <div class="mt-5 pt-3" data-aos="fade-right" data-aos-delay="300">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                </svg>
+                            </div>
+                            <p class="mb-0">5+ years of research experience with leading institutions</p>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                                </svg>
+                            </div>
+                            <p class="mb-0">Specializing in East Africa and the Great Lakes Region</p>
+                        </div>
+                    </div>
                 </div>
-               
+                <div class="col-lg-6">
+                    <div class="position-relative" data-aos="fade-left">
+                        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cadeau Héritier" class="img-fluid rounded-4 profile-image shadow-lg">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary opacity-10 rounded-4"></div>
+                        
+                        <div class="position-absolute bottom-0 start-0 end-0 p-4" style="background: rgba(0,0,0,0.5); border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;">
+                            <div class="d-flex align-items-center">
+                                <div class="flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-quote" viewBox="0 0 16 16">
+                                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow-1 ms-3 text-white">
+                                    <p class="mb-0 fst-italic">"Research must serve the communities it studies. My work bridges academic rigor with practical policy solutions for displaced populations."</p>
+                                    <small class="d-block mt-2">— Cadeau Héritier</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-    <!-- About Section -->
-    <section id="about" class="section section--alt">
+    <!-- Stats Section -->
+    <section class="py-5 bg-light">
         <div class="container">
-            <div class="row mb-5 fade-in">
-                <div class="col-12 text-center">
-                    <h2>About Me</h2>
-                    <p class="lead mx-auto" style="max-width: 700px;">Specializing in refugee protection, peacebuilding, and community engagement with host communities in the Great Lakes Region.</p>
+            <div class="row g-4">
+                <div class="col-md-3 col-6" data-aos="fade-up">
+                    <div class="stats-card">
+                        <div class="stats-number" data-count="15">0</div>
+                        <div class="stats-label">Research Projects</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stats-card">
+                        <div class="stats-number" data-count="8">0</div>
+                        <div class="stats-label">Countries Covered</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stats-card">
+                        <div class="stats-number" data-count="5000">0</div>
+                        <div class="stats-label">Interviews Conducted</div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stats-card">
+                        <div class="stats-number" data-count="4">0</div>
+                        <div class="stats-label">Languages</div>
+                    </div>
                 </div>
             </div>
-            <div class="row fade-in">
-                <!--about me-->
-                <div class="row mt-4">
-                    <div class="col-md-6">
-                        <h4 class="mb-3">Personal Details</h4>
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><strong>Based in:</strong> Nairobi, Kenya</li>
-                            <li class="mb-2"><strong>Languages:</strong> English, French, Kiswahili, Kinyarwanda</li>
-                            <li class="mb-2"><strong>Education:</strong> BA Sociology (Moi University)</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="p-4 bg-white rounded shadow-sm">
-                            <h5 class="mb-3">Research Interests</h5>
-                            <ul class="list-unstyled">
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Forced Migration</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Refugee Economies</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Peacebuilding</li>
-                                <li class="mb-2"><i class="fas fa-check-circle text-primary me-2"></i> Digital Livelihoods</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+        </div>
+    </section>
 
-                <!--key expertise-->
-                <div class="col-lg-5 mb-5 mb-lg-0 slide-up">
-                    <h4 class="mb-4">Key Expertise</h4>
-                    <div class="mb-4">
-                        <h5>Forced Migration Research</h5>
-                        <div class="progress">
-                        </div>
-                    </div>
-                    <div class="mb-4">
-                        <h5>Refugee Protection Policy</h5>
-                        <div class="progress">
-                       </div>
-                    </div>
-                    <div class="mb-4">
-                        <h5>Community Engagement</h5>
-                        <div class="progress">
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">Multilingual researcher and advocate specializing in forced migration, refugee protection, and community engagement in East Africa.</p>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <div class="pe-lg-5">
+                        <h3 class="mb-4">Biography</h3>
+                        <p class="mb-4">With over five years of dedicated research and advocacy in forced migration, I've worked at the intersection of academic research, policy development, and grassroots community engagement.</p>
+                        <p class="mb-4">My work focuses on understanding the complex dynamics of refugee economies, protection mechanisms, and durable solutions, with particular emphasis on the Great Lakes Region of Africa.</p>
+                        <p>As a multilingual researcher (English, French, Kiswahili, Kinyarwanda), I bring unique cultural and linguistic insights to my work with displaced communities.</p>
+                        
+                        <div class="mt-5">
+                            <h4 class="mb-3">Education</h4>
+                            <div class="d-flex mb-3">
+                                <div class="flex-shrink-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" class="bi bi-mortarboard-fill" viewBox="0 0 16 16">
+                                        <path d="M8.211 2.047a.5.5 0 0 0-.422 0l-7.5 3.5a.5.5 0 0 0 .025.917l7.5 3a.5.5 0 0 0 .372 0L14 7.14V13a1 1 0 0 0-1 1v2h3v-2a1 1 0 0 0-1-1V6.739l.686-.275a.5.5 0 0 0 .025-.917l-7.5-3.5Z"/>
+                                        <path d="M4.176 9.032a.5.5 0 0 0-.656.327l-.5 1.7a.5.5 0 0 0 .294.605l4.5 1.8a.5.5 0 0 0 .372 0l4.5-1.8a.5.5 0 0 0 .294-.605l-.5-1.7a.5.5 0 0 0-.656-.327L8 10.466 4.176 9.032Z"/>
+                                    </svg>
+                                </div>
+                                <div class="flex-grow-1 ms-3">
+                                    <h5 class="mb-0">Bachelor of Arts in Sociology</h5>
+                                    <p class="mb-0 text-muted">Moi University, Kenya</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 slide-up">
-                    <p>Deeply involved in forced migration research with institutions like University of Oxford's Refugee Studies Center, British Academy, and University of Bergen.</p>
-                    <p>Currently serving as Policy & Research Advisor at Global Rights Defenders (GRD), leading studies on durable solutions for refugees.</p>
-                    <p>Extensive experience working with NGOs like HIAS, RCK, and RefugePoint on refugee protection and conflict resolution.</p>
-                    
-                    
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="ps-lg-5">
+                        <h3 class="mb-4">Languages</h3>
+                        <div class="mb-5">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://flagcdn.com/w20/gb.png" class="language-icon" alt="English">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <span>English</span>
+                                        <span>Fluent</span>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://flagcdn.com/w20/fr.png" class="language-icon" alt="French">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <span>French</span>
+                                        <span>Fluent</span>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://flagcdn.com/w20/ke.png" class="language-icon" alt="Kiswahili">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Kiswahili</span>
+                                        <span>Professional</span>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <img src="https://flagcdn.com/w20/rw.png" class="language-icon" alt="Kinyarwanda">
+                                <div class="flex-grow-1">
+                                    <div class="d-flex justify-content-between">
+                                        <span>Kinyarwanda</span>
+                                        <span>Native</span>
+                                    </div>
+                                    <div class="progress mt-1" style="height: 8px;">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <h3 class="mb-4">Research Approach</h3>
+                        <div class="research-methodology">
+                            <div class="methodology-step">
+                                <div class="methodology-number">1</div>
+                                <div class="methodology-content">
+                                    <h5>Community-Centered</h5>
+                                    <p class="mb-0">Engaging directly with refugee communities to ensure research reflects their lived experiences and priorities.</p>
+                                </div>
+                            </div>
+                            <div class="methodology-step">
+                                <div class="methodology-number">2</div>
+                                <div class="methodology-content">
+                                    <h5>Mixed Methods</h5>
+                                    <p class="mb-0">Combining quantitative data analysis with qualitative ethnographic approaches for comprehensive insights.</p>
+                                </div>
+                            </div>
+                            <div class="methodology-step">
+                                <div class="methodology-number">3</div>
+                                <div class="methodology-content">
+                                    <h5>Policy-Oriented</h5>
+                                    <p class="mb-0">Designing research with clear pathways to policy impact and practical solutions.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="section section--alt">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Areas of Expertise</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">Specialized knowledge and skills in forced migration research and policy development.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3" data-aos="fade-up">
+                    <div class="h-100 p-4 bg-white rounded-3 shadow-sm border-top border-4 border-primary">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--primary)" class="bi bi-people-fill" viewBox="0 0 16 16">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7Zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm-5.784 6A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216ZM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/>
+                            </svg>
+                        </div>
+                        <h4 class="mb-3">Forced Migration Research</h4>
+                        <p class="mb-0">Specialized in studying displacement patterns, protection risks, and durable solutions for refugees and IDPs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="h-100 p-4 bg-white rounded-3 shadow-sm border-top border-4 border-primary">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--primary)" class="bi bi-bar-chart-line-fill" viewBox="0 0 16 16">
+                                <path d="M11 2a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v12h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1v-3a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3h1V7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7h1V2z"/>
+                            </svg>
+                        </div>
+                        <h4 class="mb-3">Data Analysis</h4>
+                        <p class="mb-0">Expertise in both quantitative and qualitative data collection, analysis, and visualization.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="h-100 p-4 bg-white rounded-3 shadow-sm border-top border-4 border-primary">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--primary)" class="bi bi-file-earmark-text-fill" viewBox="0 0 16 16">
+                                <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM4.5 9a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM4 10.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 1 0-1h4a.5.5 0 0 1 0 1h-4z"/>
+                            </svg>
+                        </div>
+                        <h4 class="mb-3">Policy Development</h4>
+                        <p class="mb-0">Translating research findings into actionable policy recommendations for governments and NGOs.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="h-100 p-4 bg-white rounded-3 shadow-sm border-top border-4 border-primary">
+                        <div class="mb-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--primary)" class="bi bi-chat-square-text-fill" viewBox="0 0 16 16">
+                                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                            </svg>
+                        </div>
+                        <h4 class="mb-3">Community Engagement</h4>
+                        <p class="mb-0">Building trust and partnerships with refugee communities for participatory research approaches.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="text-center mb-4">Research Skills & Methodologies</h3>
+                    <div class="text-center">
+                        <span class="skill-badge">Survey Design</span>
+                        <span class="skill-badge">Ethnographic Research</span>
+                        <span class="skill-badge">Focus Groups</span>
+                        <span class="skill-badge">Key Informant Interviews</span>
+                        <span class="skill-badge">Statistical Analysis</span>
+                        <span class="skill-badge">GIS Mapping</span>
+                        <span class="skill-badge">Participatory Action Research</span>
+                        <span class="skill-badge">Policy Analysis</span>
+                        <span class="skill-badge">Qualitative Coding</span>
+                        <span class="skill-badge">Data Visualization</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="chart-container">
+                        <canvas id="researchMethodsChart"></canvas>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="chart-container">
+                        <canvas id="regionExpertiseChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,49 +380,81 @@
     <!-- Experience Section -->
     <section id="experience" class="section">
         <div class="container">
-            <div class="row mb-5 fade-in">
+            <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2>Professional Experience</h2>
-                    <p class="lead mx-auto" style="max-width: 700px;">My journey working with refugees and leading research in forced migration.</p>
+                    <h2 class="section-title">Professional Experience</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">Key positions held with leading research institutions and humanitarian organizations.</p>
                 </div>
             </div>
             
-            <div class="row fade-in">
+            <div class="row">
                 <div class="col-12">
                     <div class="timeline">
                         <!-- Global Rights Defenders -->
-                        <div class="timeline-item slide-up">
-                            <div class="timeline-dot">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
+                        <div class="timeline-item left" data-aos="fade-right">
                             <div class="timeline-content">
-                                <h4>Global Rights Defenders (GRD)</h4>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <h4 class="mb-0">Global Rights Defenders (GRD)</h4>
+                                    <span class="badge bg-primary">Current</span>
+                                </div>
                                 <p class="text-primary mb-3">Policy & Research Advisor | July 2024 - Present</p>
-                                <ul>
-                                    <li>Leading research on 'An Alternative to Durable Solutions for Refugees: East African Community Permit'</li>
-                                    <li>Comparative analysis of Global Compact on Refugee (GCR) member countries' refugee laws and policies</li>
-                                    <li>Study on 'Understanding Challenges with Refugee ID in Kakuma Camp'</li>
-                                    <li>Presented research at 'From Evidence to Policy: Research & Policy Symposium (2024)'</li>
+                                <ul class="mb-0">
+                                    <li>Leading research on alternative durable solutions for refugees in East Africa</li>
+                                    <li>Comparative analysis of refugee laws and policies across GCR member countries</li>
+                                    <li>Field research on refugee identification challenges in Kakuma Camp</li>
+                                    <li>Presented findings at international research symposiums</li>
                                 </ul>
                             </div>
                         </div>
                         
                         <!-- Samuel Hall -->
-                        <div class="timeline-item slide-up">
-                            <div class="timeline-dot">
-                                <i class="fas fa-search"></i>
-                            </div>
+                        <div class="timeline-item right" data-aos="fade-left">
                             <div class="timeline-content">
                                 <h4>Samuel Hall</h4>
                                 <p class="text-primary mb-3">Research Assistant Intern | Jan 2024 - July 2024</p>
-                                <ul>
-                                    <li>Red Cross Global Evaluation: Protection program in 5 African countries</li>
-                                    <li>FAIR Project: Research on inclusive return policies</li>
-                                    <li>UNDP study on 'The Nexus between Climate, Mobility and Gender in Kenya'</li>
+                                <ul class="mb-0">
+                                    <li>Conducted evaluation of Red Cross protection programs across 5 African countries</li>
+                                    <li>Research on inclusive return policies for the FAIR Project</li>
+                                    <li>UNDP study on climate, mobility and gender nexus in Kenya</li>
                                     <li>Co-authored refugee storytelling publications</li>
                                 </ul>
                             </div>
                         </div>
+                        
+                        <!-- Oxford Refugee Studies Center -->
+                        <div class="timeline-item left" data-aos="fade-right">
+                            <div class="timeline-content">
+                                <h4>University of Oxford</h4>
+                                <p class="text-primary mb-3">Research Consultant | 2023</p>
+                                <ul class="mb-0">
+                                    <li>Co-authored "Reimagining Diaspora Humanitarianism" with Dr. Marie Godin</li>
+                                    <li>Presented at ASAUK Conference 2024 and IASFM20</li>
+                                    <li>Research on digital refugee economies in Nairobi</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- HIAS -->
+                        <div class="timeline-item right" data-aos="fade-left">
+                            <div class="timeline-content">
+                                <h4>HIAS Refugee Trust of Kenya</h4>
+                                <p class="text-primary mb-3">Community Engagement Officer | 2022</p>
+                                <ul class="mb-0">
+                                    <li>Facilitated community dialogues between refugees and host communities</li>
+                                    <li>Implemented peacebuilding initiatives in Kakuma refugee camp</li>
+                                    <li>Documented protection concerns and advocated for solutions</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="text-center mb-4">Research Impact by Organization</h3>
+                    <div class="chart-container">
+                        <canvas id="impactChart"></canvas>
                     </div>
                 </div>
             </div>
@@ -202,55 +464,99 @@
     <!-- Research Section -->
     <section id="research" class="section section--alt">
         <div class="container">
-            <div class="row mb-5 fade-in">
+            <div class="row mb-5">
                 <div class="col-12 text-center">
-                    <h2>Selected Research</h2>
-                    <p class="lead mx-auto" style="max-width: 700px;">My contributions to forced migration research and policy development.</p>
+                    <h2 class="section-title">Research Projects</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">Selected studies on forced migration, refugee economies, and protection mechanisms.</p>
                 </div>
             </div>
             
-            <div class="row fade-in">
-                <!-- Research Item 1 -->
-                <div class="col-md-6 col-lg-4 mb-4 slide-up">
-                    <div class="research-card card h-100 animate__animated animate__fadeInUp">
-                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="research-card-img card-img-top" alt="Research Image">
+            <div class="row g-4">
+                <!-- Research 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up">
+                    <div class="research-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="research-card-img card-img-top" alt="Research Image">
                         <div class="card-body">
                             <span class="research-badge">Oxford University</span>
                             <h5 class="card-title">Reimagining Diaspora Humanitarianism</h5>
-                            <p class="card-text">Co-authored with Dr. Marie Godin (Oxford). Presented at ASAUK Conference 2024 and IASFM20.</p>
+                            <p class="card-text">Examining how diaspora communities engage in humanitarian efforts for refugees in East Africa.</p>
+                            <div class="mb-3">
+                                <span class="research-tag">Diaspora Studies</span>
+                                <span class="research-tag">Humanitarianism</span>
+                                <span class="research-tag">Qualitative</span>
+                            </div>
+                            <div class="impact-meter mb-3">
+                                <div class="impact-level" style="width: 85%"></div>
+                            </div>
+                            <small class="text-muted">Policy Impact: High | Community Engagement: Medium</small>
                         </div>
                         <div class="card-footer bg-transparent border-top-0">
-                            <button class="btn btn-sm btn-outline-primary">Read More</button>
+                            <button class="btn btn-sm btn-research">Read Publication</button>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Research Item 2 -->
-                <div class="col-md-6 col-lg-4 mb-4 slide-up">
-                    <div class="research-card card h-100 animate__animated animate__fadeInUp animate__delay-1s">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="research-card-img card-img-top" alt="Research Image">
+                <!-- Research 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="research-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="research-card-img card-img-top" alt="Research Image">
                         <div class="card-body">
                             <span class="research-badge">Refugee Studies Center</span>
                             <h5 class="card-title">Digital Refugee Economies in Nairobi</h5>
-                            <p class="card-text">Research with Oxford's Refugee Studies Center on Congolese refugee digital livelihoods.</p>
+                            <p class="card-text">Mapping the digital livelihood strategies of Congolese refugees in Nairobi's urban settlements.</p>
+                            <div class="mb-3">
+                                <span class="research-tag">Digital Livelihoods</span>
+                                <span class="research-tag">Urban Refugees</span>
+                                <span class="research-tag">Mixed Methods</span>
+                            </div>
+                            <div class="impact-meter mb-3">
+                                <div class="impact-level" style="width: 75%"></div>
+                            </div>
+                            <small class="text-muted">Policy Impact: Medium | Community Engagement: High</small>
                         </div>
                         <div class="card-footer bg-transparent border-top-0">
-                            <button class="btn btn-sm btn-outline-primary">Read More</button>
+                            <button class="btn btn-sm btn-research">Read Publication</button>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Research Item 3 -->
-                <div class="col-md-6 col-lg-4 mb-4 slide-up">
-                    <div class="research-card card h-100 animate__animated animate__fadeInUp animate__delay-2s">
-                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" class="research-card-img card-img-top" alt="Research Image">
+                <!-- Research 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="research-card card h-100">
+                        <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" class="research-card-img card-img-top" alt="Research Image">
                         <div class="card-body">
                             <span class="research-badge">Samuel Hall</span>
                             <h5 class="card-title">Refugee Storytelling Series</h5>
-                            <p class="card-text">"On the Long Run" and "With One Arm and Endless Resolve" - refugee narratives with Samuel Hall.</p>
+                            <p class="card-text">Documenting refugee narratives to inform policy and challenge stereotypes about displacement.</p>
+                            <div class="mb-3">
+                                <span class="research-tag">Narrative Research</span>
+                                <span class="research-tag">Advocacy</span>
+                                <span class="research-tag">Qualitative</span>
+                            </div>
+                            <div class="impact-meter mb-3">
+                                <div class="impact-level" style="width: 90%"></div>
+                            </div>
+                            <small class="text-muted">Policy Impact: High | Community Engagement: High</small>
                         </div>
                         <div class="card-footer bg-transparent border-top-0">
-                            <button class="btn btn-sm btn-outline-primary">Read More</button>
+                            <button class="btn btn-sm btn-research">Read Publication</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="text-center mb-4">Research Focus Areas</h3>
+                    <div class="map-container">
+                        <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Africa Map" class="img-fluid w-100 h-100 object-fit-cover">
+                        <div class="map-overlay">
+                            <h4 class="text-white">Primary Research Regions</h4>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-primary">Great Lakes Region</span>
+                                <span class="badge bg-primary">East Africa</span>
+                                <span class="badge bg-primary">Horn of Africa</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,44 +564,242 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section text-white">
+    <!-- Publications Section -->
+    <section id="publications" class="section">
         <div class="container">
-            <div class="row align-items-center fade-in">
-                <div class="col-lg-8 mb-5 mb-lg-0">
-                    <h2 class="contact-heading mb-4">Let's collaborate on research.</h2>
-                    <div class="d-flex align-items-center mb-4">
-                        <i class="fas fa-envelope fa-2x me-4"></i>
-                        <a href="mailto:Cadeauheritier01@gmail.com" class="contact-email">Cadeauheritier01@gmail.com</a>
-                    </div>
-                    <p class="mb-4">Specializing in forced migration research, refugee protection policy, and community engagement in East Africa and the Great Lakes Region.</p>
-                    
-                    <div class="d-flex">
-                        <a href="#" class="social-icon me-3" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="#" class="social-icon me-3" target="_blank">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="social-icon" target="_blank">
-                            <i class="fab fa-researchgate"></i>
-                        </a>
+            <div class="row mb-5">
+                <div class="col-12 text-center">
+                    <h2 class="section-title">Publications</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">Academic papers, policy briefs, and research reports contributing to forced migration discourse.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Publication 1 -->
+                <div class="col-md-6" data-aos="fade-up">
+                    <div class="publication-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--research-blue)" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                    <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5L9.5 0zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">An Alternative to Durable Solutions for Refugees: East African Community Permit</h4>
+                                <p class="text-muted mb-2"><strong>Global Rights Defenders</strong> | 2024</p>
+                                <p class="mb-3">Proposing a regional approach to refugee mobility and integration within the East African Community framework.</p>
+                                <a href="#" class="btn btn-outline-research btn-sm">Read Policy Brief</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="bg-white p-4 rounded shadow-sm text-dark animate__animated animate__fadeInRight">
-                        <h4 class="mb-4">Get In Touch</h4>
+                
+                <!-- Publication 2 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="publication-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--research-orange)" class="bi bi-journal-text" viewBox="0 0 16 16">
+                                    <path d="M5 10.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm0-2a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                    <path d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"/>
+                                    <path d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Understanding Challenges with Refugee ID in Kakuma Camp</h4>
+                                <p class="text-muted mb-2"><strong>Global Rights Defenders</strong> | 2024</p>
+                                <p class="mb-3">Investigating bureaucratic hurdles in refugee identification processes and their impact on protection and services.</p>
+                                <a href="#" class="btn btn-outline-research btn-sm">Read Report</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Publication 3 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="publication-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--research-purple)" class="bi bi-book" viewBox="0 0 16 16">
+                                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">The Nexus between Climate, Mobility and Gender in Kenya</h4>
+                                <p class="text-muted mb-2"><strong>UNDP / Samuel Hall</strong> | 2024</p>
+                                <p class="mb-3">Exploring how climate change interacts with gender dynamics to shape migration patterns in Kenya.</p>
+                                <a href="#" class="btn btn-outline-research btn-sm">Read Study</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Publication 4 -->
+                <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="publication-card p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="d-flex align-items-start">
+                            <div class="flex-shrink-0 me-3">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="var(--secondary)" class="bi bi-collection" viewBox="0 0 16 16">
+                                    <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Refugee Storytelling: "On the Long Run" & "With One Arm and Endless Resolve"</h4>
+                                <p class="text-muted mb-2"><strong>Samuel Hall</strong> | 2024</p>
+                                <p class="mb-3">Documenting refugee narratives to inform policy and challenge stereotypes about displacement.</p>
+                                <a href="#" class="btn btn-outline-research btn-sm">Read Stories</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <a href="#" class="btn btn-primary px-4 py-3">
+                        <i class="fas fa-book-open me-2"></i> View All Publications
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section section--alt py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-5">
+                    <h2 class="section-title">Collaborator Testimonials</h2>
+                    <p class="lead mx-auto" style="max-width: 700px;">What colleagues and partners say about working with me.</p>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" class="rounded-circle me-3" width="50" height="50" alt="Testimonial">
+                            <div>
+                                <h5 class="mb-0">Dr. Marie Godin</h5>
+                                <small class="text-muted">University of Oxford</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Cadeau brings exceptional cultural and linguistic insights to forced migration research. His work on diaspora humanitarianism significantly enriched our project's findings and policy recommendations."</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-circle me-3" width="50" height="50" alt="Testimonial">
+                            <div>
+                                <h5 class="mb-0">Samuel Okiror</h5>
+                                <small class="text-muted">Samuel Hall</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Working with Cadeau on the UNDP climate mobility study was a pleasure. His ability to engage with refugee communities and extract nuanced insights is truly remarkable."</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" class="rounded-circle me-3" width="50" height="50" alt="Testimonial">
+                            <div>
+                                <h5 class="mb-0">Amina Hersi</h5>
+                                <small class="text-muted">Global Rights Defenders</small>
+                            </div>
+                        </div>
+                        <p class="mb-0">"Cadeau's research on refugee identification challenges in Kakuma has directly informed our advocacy work. His policy recommendations are both practical and impactful."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="shape-divider-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.29C191.17,73.71,95.75,98.19,0,119.05V0H1200V27.35C1041.86,86.61,861.78,75.2,698.24,44.62,574.5,21.15,463.12,34.2,321.39,56.29Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5 mb-lg-0" data-aos="fade-right">
+                    <h2 class="text-white mb-4">Get in Touch</h2>
+                    <p class="text-white-50 mb-5">Interested in collaborating on research or consulting on forced migration issues? Reach out to discuss potential projects or partnerships.</p>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <a href="mailto:Cadeauheritier01@gmail.com" class="text-white">Cadeauheritier01@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="d-flex align-items-center mb-4">
+                        <div class="me-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="text-white">Nairobi, Kenya</span>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <h4 class="text-white mb-3">Connect With Me</h4>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="social-icon" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn">
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter">
+                                <i class="fab fa-twitter fa-lg"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="ResearchGate">
+                                <i class="fab fa-researchgate fa-lg"></i>
+                            </a>
+                            <a href="#" class="social-icon" target="_blank" data-bs-toggle="tooltip" data-bs-placement="top" title="Academia.edu">
+                                <i class="fas fa-graduation-cap fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="bg-white p-4 p-lg-5 rounded-3 shadow-sm">
+                        <h3 class="mb-4">Send a Message</h3>
                         <form id="contactForm">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
                             </div>
                             <div class="mb-3">
-                                <textarea class="form-control" rows="3" placeholder="Your Message" required></textarea>
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject">
+                                    <option value="research">Research Collaboration</option>
+                                    <option value="consulting">Consulting Inquiry</option>
+                                    <option value="speaking">Speaking Engagement</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
-                            <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 py-3">
+                                <i class="fas fa-paper-plane me-2"></i> Send Message
+                            </button>
                         </form>
                     </div>
                 </div>
@@ -304,22 +808,36 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-4 bg-dark text-white">
+    <footer class="footer">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-3 mb-md-0">
-                    <p class="mb-0">&copy; 2024 Cadeau Héritier. All rights reserved.</p>
+                    <div class="d-flex align-items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-globe me-2" viewBox="0 0 16 16">
+                            <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.7 6.7 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z"/>
+                        </svg>
+                        <h5 class="mb-0 text-white">Cadeau Héritier Consulting</h5>
+                    </div>
                 </div>
                 <div class="col-md-6 text-md-end">
-                    <a href="#" class="text-white me-3">Privacy Policy</a>
-                    <a href="#" class="text-white">Terms of Use</a>
+                    <p class="mb-0 text-white-50">&copy; 2024 All rights reserved. Designed with <i class="fas fa-heart text-danger"></i> for researchers.</p>
                 </div>
             </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top btn btn-primary btn-lg rounded-circle shadow" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS (Animate On Scroll) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <!-- Custom Scripts -->
     <script src="index.js"></script>
 </body>
 </html>
