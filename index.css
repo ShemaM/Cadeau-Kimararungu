@@ -83,6 +83,7 @@
             line-height: 1.2;
             background: linear-gradient(to right, var(--primary), var(--secondary));
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
         
@@ -589,50 +590,3 @@
             animation: float 3s ease-in-out infinite;
         }
     
-        /* Custom css for service card */
-        .service-card {
-            position: relative;
-            overflow: hidden;
-            transition: transform 0.3s ease;
-          }
-        
-          .service-card:hover {
-            transform: scale(1.05);
-          }
-        
-          .service-card .service-icon {
-            font-size: 2.5rem;
-            color: #218838;
-            margin-bottom: 1.5rem;
-            transition: transform 0.3s ease;
-          }
-        
-          .service-card:hover .service-icon {
-            transform: translateY(-10px);
-          }
-        
-          .service-card .service-title {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 1.5rem;
-          }
-        
-          .service-card .service-hover-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            color: #fff;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            transition: opacity 0.3s ease;
-          }
-        
-          .service-card:hover .service-hover-overlay {
-            display: flex;
-            opacity: 1;
-          }
