@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadeau Héritier - Forced Migration Research & Policy</title>
+    <title>Cadeau Héritier Consulting </title>
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     
     <!--icon -->
-    <link rel="icon" href="Cadeau.png" type="image/png" style="width: 100px; height: auto; border-radius: 50%;">
+    <link rel="icon" href="Cadeau.png" type="image/png">
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -36,11 +36,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Crimson+Text:wght@400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+
     
 </head>
 <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
    
-    <!-- Navigation -->
+    <!-- Navigation --> 
     <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#">
@@ -109,36 +111,14 @@
                             </div>
                             <p class="mb-0">5+ years of research experience with leading institutions</p>
                         </div>
-                        <div class="d-flex align-items-center">
-                            <div class="me-3">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--primary)" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
-                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
-                                </svg>
-                            </div>
-                            <p class="mb-0">Specializing in East Africa and the Great Lakes Region</p>
-                        </div>
+                        
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="position-relative" data-aos="fade-left">
                         <img src="Cadeau.png" alt="Cadeau Héritier" class="img-fluid rounded-4 profile-image shadow-lg">
-                        <div class="position-absolute top-0 start-0 w-100 h-100 bg-primary rounded-4"></div>
-                        
-                        <div class="position-absolute bottom-0 start-0 end-0 p-4" style="background: rgba(0,0,0,0.5); border-bottom-left-radius: 16px; border-bottom-right-radius: 16px;">
-                                    
-                            <div class="d-flex align-items-center">
-                                <div class="flex-shrink-0">
-                                    <img src="Cadeau.png" alt="Cadeau Héritier" class="rounded-circle" width="50" height="50">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-quote" viewBox="0 0 16 16">
-                                        <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
-                                    </svg>
-                                </div>
-                                <div class="flex-grow-1 ms-3 text-white">
-                                    <p class="mb-0 fst-italic">"Research must serve the communities it studies. My work bridges academic rigor with practical policy solutions for displaced populations."</p>
-                                    <small class="d-block mt-2">— Cadeau Héritier</small>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="position-absolute top-0 start-0 w-100 h-100 rounded-4"></div>
+    
                     </div>
                 </div>
             </div>
@@ -147,7 +127,9 @@
 
     <!-- Stats Section -->
     <section class="py-5 bg-light">
+        
         <div class="container">
+            <h3 class="section-title">Research Metrics</h3>
             <div class="row g-4">
                 <div class="col-md-3 col-6" data-aos="fade-up">
                     <div class="stats-card">
@@ -183,7 +165,10 @@
             <div class="row mb-5">
                 <div class="col-12 text-center">
                     <h2 class="section-title">About Me</h2>
-                    <p class="lead mx-auto" style="max-width: 700px;">Multilingual researcher and advocate specializing in forced migration, refugee protection, and community engagement in East Africa.</p>
+                    <p class="mb-4" style="max-width: 700px;">I am a multilingual research consultant specializing in forced migration research, policy and community engagement. My work focuses on migration governance by conducting research that reflects lived experiences and priorities of displaced communities and transforming forced migration research into policy impact.
+
+                        Over the years, I had a privilege of working with esteemed humanitarian organisations such as HIAS, the Refugee Consortium of Kenya (RCK), RefugePoint, HAART Kenya, and Pamoja Trust on issues ranging from refugee protection to peacebuilding and conflict resolution to community engagement with the host communities.
+                        </p>
                 </div>
             </div>
             
@@ -300,6 +285,7 @@
    <!-- Expertise Section -->
 <section id="expertise" class="section section--alt py-6">
     <div class="container">
+        
         <!-- Header -->
         <div class="row mb-6">
             <div class="col-12 text-center">
@@ -381,102 +367,177 @@
             </div>
         </div>
         
-      
-      <!-- Charts Section -->
-<div class="row mt-7 g-5">
-    <!-- Research Skills Radar Chart -->
-    <div class="col-lg-6" data-aos="fade-right">
-        <div class="chart-card p-4 bg-white rounded-4 shadow-sm h-100">
-            <h4 class="mb-4 text-center">Research Skills Proficiency</h4>
-            <div class="chart-container position-relative" style="height: 300px;">
-                <canvas id="researchSkillsChart"></canvas>
-            </div>
-            <div class="legend mt-4 text-center">
-                <div class="d-inline-block mx-3"><span class="legend-color" style="background-color: rgba(54, 162, 235, 0.6);"></span> Proficiency Level</div>
+        <div class="col-lg-6" data-aos="fade-right">
+            <div class="chart-card p-4 bg-white rounded-4 shadow-sm h-100" style="height: 400px;">
+
+               <h4 class="mb-4 text-center">Great Lakes & Eastern Africa Map</h4>
+                <div class="map-wrapper position-relative" style="height: 100%; width: 100%;">
+                    <div id="africaMap" style="width: 100%; height: 300px; border-radius: 0.5rem;"></div>
+                </div>
             </div>
         </div>
-    </div>
+        
 
-</div>
     </div>
 </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-12 text-center">
-                    <h2 class="section-title">Professional Experience</h2>
-                    <p class="lead mx-auto" style="max-width: 700px;">Key positions held with leading research institutions and humanitarian organizations.</p>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="col-12">
-                    <div class="timeline">
-                        <!-- Global Rights Defenders -->
-                        <div class="timeline-item left" data-aos="fade-right"> 
-                            <div class="timeline-content">
-                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                    <h4 class="mb-0">Global Rights Defenders (GRD)</h4>
-                                    <span class="badge bg-primary">Current</span>
-                                </div>
-                                <p class="text-primary mb-3">Policy & Research Advisor | July 2024 - Present</p>
-                                <ul class="mb-0">
-                                    <li>Leading research on alternative durable solutions for refugees in East Africa</li>
-                                    <li>Comparative analysis of refugee laws and policies across GCR member countries</li>
-                                    <li>Field research on refugee identification challenges in Kakuma Camp</li>
-                                    <li>Presented findings at international research symposiums</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Samuel Hall -->
-                        <div class="timeline-item right" data-aos="fade-left">
-                            <div class="timeline-content">
-                                <h4>Samuel Hall</h4>
-                                <p class="text-primary mb-3">Research Assistant Intern | Jan 2024 - July 2024</p>
-                                <ul class="mb-0">
-                                    <li>Conducted evaluation of Red Cross protection programs across 5 African countries</li>
-                                    <li>Research on inclusive return policies for the FAIR Project</li>
-                                    <li>UNDP study on climate, mobility and gender nexus in Kenya</li>
-                                    <li>Co-authored refugee storytelling publications</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- Oxford Refugee Studies Center -->
-                        <div class="timeline-item left" data-aos="fade-right">
-                            <div class="timeline-content">
-                                <h4>University of Oxford</h4>
-                                <p class="text-primary mb-3">Research Consultant | 2023</p>
-                                <ul class="mb-0">
-                                    <li>Co-authored "Reimagining Diaspora Humanitarianism" with Dr. Marie Godin</li>
-                                    <li>Presented at ASAUK Conference 2024 and IASFM20</li>
-                                    <li>Research on digital refugee economies in Nairobi</li>
-                                </ul>
-                            </div>
-                        </div>
-                        
-                        <!-- HIAS -->
-                        <div class="timeline-item right" data-aos="fade-left">
-                            <div class="timeline-content">
-                                <h4>HIAS Refugee Trust of Kenya</h4>
-                                <p class="text-primary mb-3">Community Engagement Officer | 2022</p>
-                                <ul class="mb-0">
-                                    <li>Facilitated community dialogues between refugees and host communities</li>
-                                    <li>Implemented peacebuilding initiatives in Kakuma refugee camp</li>
-                                    <li>Documented protection concerns and advocated for solutions</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-    
+<!-- Experience Section -->
+<section id="experience" class="section">
+    <div class="container-fluid px-5">
+      <div class="row mb-5">
+        <div class="col-12 text-center">
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="mb-4" style="max-width: 900px;">Over the years, I have collaborated with leading NGOs serving refugees in Nairobi — including HIAS, the Refugee Consortium of Kenya (RCK), RefugePoint, HAART Kenya, and Pamoja Trust — on issues ranging from community engagement and refugee protection to peacebuilding and conflict resolution.
+          <br>  In addition, I have contributed as a Research Assistant and collaborator on various research projects related to forced migration, funded and/or led by institutions such as the University of Oxford’s Refugee Studies Centre (RSC), the British Academy, the University of Bergen, Clark University, American University, Samuel Hall, the Refugee-Led Research Hub, and the German Fellowship. Today I continue to apply my expertise in migration governance and refugee protection at GRD (Global Rights Defenders) where I am serving as Policy & Research Advisor.</p>
         </div>
-    </section>
+      </div>
+  
+      <div class="row">
+        <div class="col-12">
+          <div class="timeline">
+  
+            <!-- University of Leicester -->
+            <div class="timeline-item left" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4>University of Leicester & RLRH</h4>
+                <p class="text-primary mb-3">Researcher | 2025</p>
+                <ul>
+                  <li>Exploring refugee experiences in the tech industry in Nairobi & Kakuma</li>
+                  <li>Collaborated with Dr. Marie Godin, Fardosa Salah & Kimararungu Cadeau Héritier</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- MMC -->
+            <div class="timeline-item right" data-aos="fade-left">
+              <div class="timeline-content">
+                <h4>Mixed Migration Center (MMC)</h4>
+                <p class="text-primary mb-3">Contributor | 2025</p>
+                <ul>
+                  <li>Contributed to Mixed Migration Review 2025</li>
+                  <li>Wrote on Eastern Congo’s crisis and regional forced migration</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- OECD - UNHCR Datathon -->
+            <div class="timeline-item left" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4>OECD - UNHCR Datathon</h4>
+                <p class="text-primary mb-3">Participant | 2025</p>
+                <ul>
+                  <li>Data exploration and analysis on refugee children in Kenya</li>
+                  <li>Co-authored review with Alice Ishimwe</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- IIED -->
+            <div class="timeline-item right" data-aos="fade-left">
+              <div class="timeline-content">
+                <h4>IIED (International Institute of Environment and Development)</h4>
+                <p class="text-primary mb-3">Facilitator | Jan - Feb 2025</p>
+                <ul>
+                  <li>Led FGDs in Kinyamulenge with Congolese urban refugees in Nairobi</li>
+                  <li>Translated and transcribed interviews for research documentation</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- GRD -->
+            <div class="timeline-item left" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4>Global Rights Defenders (GRD)</h4>
+                <p class="text-primary mb-3">Policy & Research Advisor | Jul 2024 - Present</p>
+                <ul>
+                  <li>Conducted research on EAC permit as alternative durable solution</li>
+                  <li>Led ID/documentation study in Kakuma</li>
+                  <li>Presented at international symposiums (IRC, World Bank, IKEA)</li>
+                  <li>Represented GRD at 600DaysSudanWar Conference</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- Samuel Hall -->
+            <div class="timeline-item right" data-aos="fade-left">
+              <div class="timeline-content">
+                <h4>Samuel Hall</h4>
+                <p class="text-primary mb-3">Research Assistant Intern | Jan - Jul 2024</p>
+                <ul>
+                  <li>Evaluated Red Cross programs in 5 African countries</li>
+                  <li>Worked on FAIR, UNDP, RIN, GCCMI projects</li>
+                  <li>Co-authored refugee storytelling articles</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- Research Paper -->
+            <div class="timeline-item left" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4>Research Paper & Conferences</h4>
+                <p class="text-primary mb-3">Co-author | 2023 - Present</p>
+                <ul>
+                  <li>Paper with Dr. Marie Godin on Congolese diaspora humanitarianism</li>
+                  <li>Presented at ASAUK 2024 and IASFM20 (Indonesia)</li>
+                  <li>Attended PRIO’s AidAccount workshop in Kampala</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- University of Bergen -->
+            <div class="timeline-item right" data-aos="fade-left">
+              <div class="timeline-content">
+                <h4>University of Bergen</h4>
+                <p class="text-primary mb-3">Research Assistant | Dec 2022 - Mar 2023</p>
+                <ul>
+                  <li>Supported Felicity Okoth’s study on migrant economy in Nairobi</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- Oxford RSC (2023, 2022, 2021) -->
+            <div class="timeline-item left" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4>Refugee Studies Center, University of Oxford</h4>
+                <p class="text-primary mb-3">Research Assistant | 2021 - 2023</p>
+                <ul>
+                  <li>Supported studies on digital refugee economies & refugee YouTubers</li>
+                  <li>Worked under Dr. Marie Godin with RLOs (Kintsugi, YVC)</li>
+                  <li>Contributed to Refugee Livelihood documentary</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- American University -->
+            <div class="timeline-item right" data-aos="fade-left">
+              <div class="timeline-content">
+                <h4>American University</h4>
+                <p class="text-primary mb-3">Research Assistant | May - Jun 2022</p>
+                <ul>
+                  <li>Fieldwork for David Traugott on Kenya’s 2022 election environment</li>
+                </ul>
+              </div>
+            </div>
+  
+            <!-- Pamoja Trust & IRC ReBuild -->
+            <div class="timeline-item left" data-aos="fade-right">
+              <div class="timeline-content">
+                <h4>Pamoja Trust & IRC_ReBuild</h4>
+                <p class="text-primary mb-3">Facilitator | Apr - Jun 2022</p>
+                <ul>
+                  <li>Led workshops for peacebuilding ahead of 2022 General Election</li>
+                  <li>Formed refugee-host community peace groups</li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
 
     <!-- Research Section -->
     <section id="research" class="section section--alt">
@@ -833,6 +894,7 @@
     
     <!-- Custom Scripts -->
     <script src="index.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/jquery.vmap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqvmap/1.5.1/maps/africa.js"></script>
