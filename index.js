@@ -191,18 +191,3 @@
             });
         });
     
-            // Initialize map
-    var map = L.map('africaMap').setView([0.5, 30.0], 5); // Centered around Uganda/Rwanda/Burundi
-
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; OpenStreetMap contributors'
-    }).addTo(map);
-
-    // Optional: Add a circle or marker
-    L.circle([0.5, 30.0], {
-        color: 'blue',
-        fillColor: '#36a2eb99',
-        fillOpacity: 0.3,
-        radius: 500000
-    }).addTo(map).bindPopup("Great Lakes & Eastern Africa Region");
