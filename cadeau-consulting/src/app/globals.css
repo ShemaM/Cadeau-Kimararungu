@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+/* In v4, standard CSS variables work natively.
+  We define our brand colors here.
+*/
+@theme {
+  --color-brand-navy: #0F172A;
+  --color-brand-blue: #2563EB;
+  --color-brand-dust: #F59E0B;
+  --color-brand-bg: #F8FAFC;
+  
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-heading: var(--font-jakarta), ui-sans-serif, system-ui;
+  
+  --background-image-hero-gradient: linear-gradient(to bottom right, #F8FAFC 0%, #E2E8F0 100%);
+}
+
+/* Base resets */
+body {
+  background-color: var(--color-brand-bg);
+  color: var(--color-brand-navy);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
