@@ -4,23 +4,30 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import "./globals.css";
 
-// 1. Configure Body Font (Inter)
+// 1. Configure Body Font (Inter) - Clean, legible sans-serif for body text
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
 
-// 2. Configure Heading Font (Plus Jakarta Sans)
+// 2. Configure Heading Font (Plus Jakarta Sans) - Modern, geometric for headings
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
   variable: "--font-jakarta",
   display: "swap",
 });
 
+// 3. Metadata updated to match Client PDF [cite: 186-188]
 export const metadata: Metadata = {
-  title: "Cadeau Héritier Consulting | Evidence-Based Policy",
-  description: "Specialized research and policy advisory for the Great Lakes Region.",
+  title: {
+    template: "%s | Cadeau Héritier Consulting",
+    default: "Cadeau Héritier Consulting | Forced Migration & Policy",
+  },
+  description: "Specialized research, policy advisory, and community engagement for the Great Lakes Region and East Africa.",
+  icons: {
+    icon: "/images/profile.png", // Ensure you have a favicon
+  },
 };
 
 export default function RootLayout({
@@ -29,15 +36,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${jakarta.variable}`}>
-      <body className="antialiased min-h-screen flex flex-col bg-brand-bg text-brand-navy">
+    <html lang="en" className={`${inter.variable} ${jakarta.variable} scroll-smooth`}>
+      <body className="antialiased min-h-screen flex flex-col bg-slate-50 text-slate-900 font-sans">
+        
         {/* Fixed Navigation */}
         <Navbar />
 
-        {/* Main Content (pushes down below fixed nav) */}
-        <main className="grow pt-20">
+        {/* Content Wrapper:
+           Changed from <main> to <div> because our page.tsx files already contain 
+           their own <main> tags. This prevents invalid HTML nesting.
+           'pt-20' adds padding so content isn't hidden behind the fixed Navbar.
+        */}
+        <div className="grow pt-20">
           {children}
-        </main>
+        </div>
 
         {/* Global Footer */}
         <Footer />

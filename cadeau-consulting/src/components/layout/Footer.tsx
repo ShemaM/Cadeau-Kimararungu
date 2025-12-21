@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { FOOTER_LINKS, SITE_INFO } from "@/constants";
+import { FOOTER_LINKS, SITE_INFO } from "@/constants"; 
 
 // 1. Define Types to satisfy TypeScript Strict Mode
 type FooterColumn = {
@@ -24,8 +24,10 @@ export default function Footer() {
               {SITE_INFO.tagline}
             </p>
             <div className="text-sm text-slate-500 pt-4 space-y-1">
-              <p>Nairobi, Kenya • Oxford, UK</p>
+              {/* Updated to use dynamic address from constants */}
+              <p>{SITE_INFO.address}</p>
               <p className="text-brand-blue">{SITE_INFO.email}</p>
+              <p>{SITE_INFO.phone}</p>
             </div>
           </div>
 
@@ -39,7 +41,7 @@ export default function Footer() {
                 <ul className="space-y-3">
                   {column.links.map((link: string) => (
                     <li key={link}>
-                      <span className="text-sm hover:text-brand-blue transition-colors cursor-pointer block w-fit">
+                      <span className="text-sm hover:text-brand-blue transition-colors cursor-default block w-fit">
                         {link}
                       </span>
                     </li>
